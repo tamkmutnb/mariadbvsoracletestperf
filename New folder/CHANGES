@@ -1,0 +1,53 @@
+Changelog
+
+0.2.4
+--------------------------------------------------------------------------------
+- Fix bug in sequence duplication where numbers were being chosen more times than the duplication amount specified.
+- Implement repetition in sequences
+
+0.2.3
+--------------------------------------------------------------------------------
+- add custom data correlation for set fields
+- sets can either be strings or treated as numerical data (numerical data is not quoted in output)
+- fixed bug that prevents records from being generated the first time
+  after the modifying the schema and then spawning
+
+0.2.2
+--------------------------------------------------------------------------------
+- welcome and thanks to Ryan Zuwala as a developer on the project
+- add ability for use to choose a delimiter for column names if they opt to
+  include the column list in INSERT statements
+- add the ability to choose beween dash-delimited or non-dashed GUIDs, since
+  some DBMSs require dashes
+
+0.2.1
+--------------------------------------------------------------------------------
+- bug fix release
+- various fixes for saving/loading schemas
+- radio button state fixes
+
+0.2.0
+--------------------------------------------------------------------------------
+- added fixed-with output option
+- added ability to specify time/date string format
+  (see http://www.freepascal.org/docs-html/rtl/sysutils/formatchars.html)
+- allow specifying a few default actions on the command line (definition file,
+  output file, number of records)
+- added ability to include field names as the first line of delimited and
+  fixed output formats
+
+0.1.8
+--------------------------------------------------------------------------------
+- encapsulation of columns in '`', which protects from errors during
+  INSERTs into databases with strange field names (thanks  to Krzysztof Kowalski)
+- added IPv6 type
+- added CIDR masking options for IPv4 and IPv6 addresses
+- added option to optionally enclose only "alpha" fields in quotes
+- updates for newest FPC / Lazarus
+
+0.1.7
+--------------------------------------------------------------------------------
+- default widget set for Linux platforms is now GTK2
+- added ability for "Set" field type to read from a file
+- added changelog
+
